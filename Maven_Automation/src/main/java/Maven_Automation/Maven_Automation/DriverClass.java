@@ -76,6 +76,7 @@ public class DriverClass {
 			System.out.println("committing changes into github by chandra");
 			System.out.println("commiting once again");
 			System.out.println("Making one more change");
+			System.out.println("How to do the checkouts");
 		}
 	}
 
