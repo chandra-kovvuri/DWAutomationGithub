@@ -70,13 +70,10 @@ public class DriverClass {
 		try{
 		 DriverClass d = new DriverClass();
 		d.load_Module_Drive();
-		System.out.println("Change made by Siva Ram");
-		System.out.println("Sysmmmm");
-
-	  	}catch(Exception e){
+		}catch(Exception e){
 	  		System.out.println("In catch block");
 	  		e.printStackTrace();
-			System.out.println("committing changes into github");
+			System.out.println("committing changes into github by chandra");
 		}
 	}
 
