@@ -113,7 +113,7 @@ public class DriverClass {
 	  	}catch(Exception e){
 	  		System.out.println("In catch block");
 	  		e.printStackTrace();
-			System.out.println("Unexpected Error Message"+e.getMessage());
+			System.out.println("committing changes into github");
 		}
 	}
 
