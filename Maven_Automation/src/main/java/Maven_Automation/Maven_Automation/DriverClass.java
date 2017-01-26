@@ -77,6 +77,7 @@ public class DriverClass {
 			System.out.println("commiting once again");
 			System.out.println("Making one more change");
 			System.out.println("How to do the checkouts");
+			System.out.println("Running through Jenkins");
 		}
 	}
 
