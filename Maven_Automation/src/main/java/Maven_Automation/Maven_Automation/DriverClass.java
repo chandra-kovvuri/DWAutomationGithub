@@ -1,51 +1,11 @@
 package Maven_Automation.Maven_Automation;
-
-/*import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-/**
- * Hello world!
- *
- */
-/*public class DriverClass{
-	//Declaring variables to store the run time values
-		int k=0;
-		String module_Name;
-		String subModule_Name,execute;
-		String result_Path;
-		String workspaceName;
-		boolean isExceptiondriver=false;
-		int expRowNumberdriver=1;
-		DataFormatter formatter1;
-		//String URL="https://sit-thehub-au.dw.oaktonapps.com";
-		//creating the object for the globalMethods class which is implemented the reusableMethods interface.
-		globalMethods globalobj = new globalMethods();
-		public void load_Module_Drive() throws Exception{
-			System.out.println("In load module method");
-		}
-    public static void main( String[] args )throws Exception
-    {
-        System.out.println( "In main method" );
-        DriverClass d=new DriverClass();
-        d.load_Module_Drive();
-        //System.setProperty("webdriver.chrome.driver", "");
-        WebDriver driver1 = new ChromeDriver();
-		driver1.manage().window().maximize();
-		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver1.navigate().to("https://sit-thehub-au.dw.oaktonapps.com");
-		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-}*/
 import java.io.FileInputStream;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 //import org.openqa.selenium.server.SeleniumServer;
 //import org.testng.annotations.Test;
+
 
 //This is a main driver class will control entire test execution. This class is responsible
 //of loading all the components of framework.
@@ -111,11 +71,11 @@ public class DriverClass {
 		 DriverClass d = new DriverClass();
 		d.load_Module_Drive();
 		System.out.println("Change made by Siva Ram");
-<<<<<<< HEAD
+
 		System.out.println("working on same file to understand git hub version control");
-=======
+
 		System.out.println("Change made by Siva Ram 2nd Time");
->>>>>>> branch 'master' of https://github.com/chandra-kovvuri/DWAutomationGithub.git
+
 	  	}catch(Exception e){
 	  		System.out.println("In catch block");
 	  		e.printStackTrace();
