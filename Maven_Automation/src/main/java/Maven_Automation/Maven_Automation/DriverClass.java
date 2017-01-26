@@ -111,7 +111,11 @@ public class DriverClass {
 		 DriverClass d = new DriverClass();
 		d.load_Module_Drive();
 		System.out.println("Change made by Siva Ram");
+<<<<<<< HEAD
 		System.out.println("working on same file to understand git hub version control");
+=======
+		System.out.println("Change made by Siva Ram 2nd Time");
+>>>>>>> branch 'master' of https://github.com/chandra-kovvuri/DWAutomationGithub.git
 	  	}catch(Exception e){
 	  		System.out.println("In catch block");
 	  		e.printStackTrace();
