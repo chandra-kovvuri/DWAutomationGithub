@@ -1,4 +1,6 @@
 package Maven_Automation.Maven_Automation;
+
+
 import java.io.FileInputStream;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -72,13 +74,9 @@ public class DriverClass {
 		d.load_Module_Drive();
 		System.out.println("Change made by Siva Ram");
 
-<<<<<<< HEAD
 		System.out.println("working on same file to understand git hub version control");
 
 		System.out.println("Change made by Siva Ram 2nd Time");
-=======
-		
->>>>>>> branch 'master' of https://github.com/chandra-kovvuri/DWAutomationGithub.git
 
 	  	}catch(Exception e){
 	  		System.out.println("In catch block");
