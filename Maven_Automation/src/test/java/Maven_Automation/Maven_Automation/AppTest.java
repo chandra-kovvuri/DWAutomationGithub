@@ -18,6 +18,7 @@ public class AppTest
     public AppTest( String testName )
     {
         super( testName );
+        System.out.println("Running test through Jenkins. should be displayed");
     }
 
     /**
@@ -34,5 +35,6 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+        System.out.println("Running test through Jenkins. should be displayed");
     }
 }

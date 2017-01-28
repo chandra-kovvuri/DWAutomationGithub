@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Maven_Automation">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/admin/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-java/3.0.1/selenium-java-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.0.1/selenium-edge-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.0.1/selenium-firefox-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.0.1/selenium-ie-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.0.1/selenium-opera-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.0.1/selenium-safari-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/io/netty/netty/3.5.7.Final/netty-3.5.7.Final.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-support/3.0.1/selenium-support-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.23/htmlunit-2.23.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.23/htmlunit-core-js-2.23.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.23/neko-htmlunit-2.23.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.20/cssparser-0.9.20.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/codeborne/phantomjsdriver/1.3.0/phantomjsdriver-1.3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.15.v20160210/websocket-client-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/eclipse/jetty/jetty-util/9.2.15.v20160210/jetty-util-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/eclipse/jetty/jetty-io/9.2.15.v20160210/jetty-io-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.15.v20160210/websocket-common-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.15.v20160210/websocket-api-9.2.15.v20160210.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-server/3.0.1/selenium-server-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20160825/jetty-repacked-9.2.13.v20160825.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.23/htmlunit-driver-2.23.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/poi/poi-ooxml/3.16-beta1/poi-ooxml-3.16-beta1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/poi/poi/3.16-beta1/poi-3.16-beta1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.16-beta1/poi-ooxml-schemas-3.16-beta1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/poi/poi-scratchpad/3.16-beta1/poi-scratchpad-3.16-beta1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/poi/ooxml-schemas/1.3/ooxml-schemas-1.3.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/testng/testng/6.10/testng-6.10.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.0.1/selenium-chrome-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.0.1/selenium-remote-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/3.6.1/maven-compiler-plugin-3.6.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-core/3.0/maven-core-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/ow2/asm/asm/6.0_ALPHA/asm-6.0_ALPHA.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M5/qdox-2.0-M5.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-compiler-api/2.8.1/plexus-compiler-api-2.8.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/2.8.1/plexus-compiler-manager-2.8.1.jar"/>
+        <pathelement location="C:/Users/admin/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/2.8.1/plexus-compiler-javac-2.8.1.jar"/>
+    </path>
+    <path id="Maven_Automation.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.DriverClass.classpath">
+        <path refid="Maven_Automation.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <classpath refid="Maven_Automation.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="Maven_Automation.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="DriverClass">
+        <java classname="Maven_Automation.Maven_Automation.DriverClass" failonerror="true" fork="yes">
+            <classpath refid="run.DriverClass.classpath"/>
+        </java>
+    </target>
+</project>
