@@ -73,11 +73,6 @@ public class DriverClass {
 		}catch(Exception e){
 	  		System.out.println("In catch block");
 	  		e.printStackTrace();
-			System.out.println("committing changes into github by chandra");
-			System.out.println("commiting once again");
-			System.out.println("Making one more change");
-			System.out.println("How to do the checkouts");
-			System.out.println("Running through Jenkins");
 		}
 	}
 
