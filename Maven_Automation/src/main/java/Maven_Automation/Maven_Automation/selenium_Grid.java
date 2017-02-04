@@ -12,14 +12,14 @@ public class selenium_Grid {
 		//System.setProperty("webdriver.chrome.driver","F:/Selenium_Automation/DataDrivernTestProject/chromedriver.exe");
 		cap.setPlatform(Platform.VISTA);
 		//cap.setVersion("55.0");
-		URL urlhub=null;
+		URL UrlNode=null;
 		try{
-			urlhub = new URL("http://172.16.0.8:5555/wd/hub");//node url has to give
+			UrlNode = new URL("http://172.16.0.8:5555/wd/hub");//node url has to give
 		}
 		catch (MalformedURLException e){
 			e.printStackTrace();
 		}
-	    RemoteWebDriver driver = new RemoteWebDriver(urlhub,cap);
+	    RemoteWebDriver driver = new RemoteWebDriver(UrlNode,cap);
 	    driver.navigate().to("http://selenium-suresh.blogspot.com");
 	    Thread.sleep(2000);
 	    System.out.println(driver.getTitle());
