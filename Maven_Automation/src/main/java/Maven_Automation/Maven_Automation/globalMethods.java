@@ -118,7 +118,7 @@ public class globalMethods implements reusableMethods {
 	}
 	//This method is useful to return the test data path based on the module name
 	public String testDataPath(String module_Name,String subModule_Name) throws Exception{
-		String testdataPath=System.getProperty("user.dir")+"\\TestData\\";
+		String testdataPath=System.getProperty("user.dir")+"\\Maven_Automation"+"\\TestData\\";
 		testdataPath =testdataPath+module_Name+".xlsx";
 		return testdataPath;
 	}

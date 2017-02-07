@@ -30,8 +30,9 @@ public class DriverClass {
 	public void load_Module_Drive() throws Exception{
 		//Loading driver.xls to decide the modules which user wants to run
 		try{
-			testdatadriver=System.getProperty("user.dir");
-			testdatadriver=testdatadriver+"\\TestData\\Driver.xlsx";
+			//testdatadriver=System.getProperty("user.dir");
+			//testdatadriver=testdatadriver+"\\TestData\\Driver.xlsx";
+			testdatadriver="C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/TestData/Driver.xlsx";
 			System.out.println("the path of the driver sheet is  "+testdatadriver);
 		//This block of code is implemented using Apache POI api as Microsoft 2010 is used as a test data sheet.
 			XSSFWorkbook wb = new  XSSFWorkbook(new FileInputStream(testdatadriver));
