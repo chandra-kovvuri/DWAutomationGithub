@@ -130,6 +130,7 @@ public class globalMethods implements reusableMethods {
 		//String baseUrl="https://ozone.oakton.com.au";
 		//driver.get(URL);
 		System.out.println("Before creating the chromedriver object");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/chromedriver.exe");
 		WebDriver driver1 = new ChromeDriver();
 		System.out.println("after creating the chromedriver object");
 		driver1.manage().window().maximize();
