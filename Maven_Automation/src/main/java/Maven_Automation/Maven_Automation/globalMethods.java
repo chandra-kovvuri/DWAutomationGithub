@@ -132,6 +132,7 @@ public class globalMethods implements reusableMethods {
 		WebDriver driver1 = new ChromeDriver();
 		driver1.manage().window().maximize();
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("In open browser method");
 		//Runtime.getRuntime().exec("C:\\Automation\\Selenium_Automation\\Handling_Window.exe");
 		//driver.manage().window().maximize();
 		driver1.navigate().to(URL);

@@ -41,6 +41,7 @@ public class DWworkspace_Creation {
 			testData=globalobj.testDataPath(module_Name,subModule_Name);
 			testdatawb =new  XSSFWorkbook(new FileInputStream(testData));
 			DataFormatter formatter = new DataFormatter();
+			System.out.println("In Dwworkspace creation method");
 			String sheetName="wssheet";
 			//Extract the data from Excel file and parameterize the data
 			switch (workspaceName){
@@ -64,6 +65,7 @@ public class DWworkspace_Creation {
 			for (rownumber = expRowNumber; rownumber <=s.getLastRowNum(); rownumber++) {
 				dataRead_Common_WS_Fields(s,rownumber,formatter);
 				if (runTestcase.equalsIgnoreCase("Yes")){
+					System.out.println("before opening the browser");
 					driver = globalobj.openBrowser(URL);
 					//Open the browser by calling the method a method
 					driver.findElement(globalobj.getbjectLocator("Username")).sendKeys(UserName);
