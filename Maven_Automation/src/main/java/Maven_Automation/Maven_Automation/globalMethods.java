@@ -129,10 +129,11 @@ public class globalMethods implements reusableMethods {
 		//String baseUrl = "file://C:/Selenium_Automation/CreateAccount.htm";
 		//String baseUrl="https://ozone.oakton.com.au";
 		//driver.get(URL);
+		System.out.println("Before creating the chromedriver object");
 		WebDriver driver1 = new ChromeDriver();
+		System.out.println("after creating the chromedriver object");
 		driver1.manage().window().maximize();
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println("In open browser method");
 		//Runtime.getRuntime().exec("C:\\Automation\\Selenium_Automation\\Handling_Window.exe");
 		//driver.manage().window().maximize();
 		driver1.navigate().to(URL);
