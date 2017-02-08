@@ -55,7 +55,8 @@ public class DriverClass {
 		    }
 		}catch (Exception e){
 			isExceptiondriver=true;
-			System.out.println("Value of the k in catch of driver class blcok   "+k);
+			System.out.println("Value of the k in catch of driver class blcok  "+k);
+			System.out.println("gitextension");
 			e.printStackTrace();
 			System.err.println("Error: " + e.getMessage());
 		}
