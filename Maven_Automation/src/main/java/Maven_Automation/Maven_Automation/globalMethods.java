@@ -52,7 +52,7 @@ public class globalMethods implements reusableMethods {
 		try{
 			file_Path=System.getProperty("user.dir");
 			if (subModule.isEmpty()) {
-				file_Path=file_Path+"\\Result\\"+mainModule+"\\";
+				file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\";
 				file = new File(file_Path);
 				if(file.exists()==false){ 
 					file.mkdir(); 
@@ -60,7 +60,7 @@ public class globalMethods implements reusableMethods {
 				file_Path=file_Path+mainModule+".xlsx";
 				test_Res_Path=file_Path;
 			}else{
-				file_Path=file_Path+"\\Result\\"+mainModule+"\\"+subModule+"\\";
+				file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\"+subModule+"\\";
 				file = new File(file_Path); 
 				if(file.exists()==false){ 
 					file.mkdirs(); 
@@ -183,7 +183,7 @@ public class globalMethods implements reusableMethods {
 			String RepositoryFile;
 			RepositoryFile=System.getProperty("user.dir");
 			Properties propertyFile = new Properties();
-            RepositoryFile =RepositoryFile+ "\\TestData\\ObjectRepository.properties";
+            RepositoryFile =RepositoryFile+"\\Maven_Automation"+ "\\TestData\\ObjectRepository.properties";
             stream = new FileInputStream(RepositoryFile);
 			propertyFile.load(stream);
 			String locatorProperty = propertyFile.getProperty(locatorName);
