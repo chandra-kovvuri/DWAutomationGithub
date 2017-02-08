@@ -54,12 +54,13 @@ public class DriverClass {
 		    }
 		}catch (Exception e){
 			isExceptiondriver=true;
-			System.out.println("Not able to read the data from Driver.xls file.");
+			System.out.println("Value of the k in catch of driver class blcok   "+k);
 			e.printStackTrace();
 			System.err.println("Error: " + e.getMessage());
 		}
 		finally{
 			if(isExceptiondriver == true){
+				System.out.println("Value of the k in finally blcok of driver class  "+k);
 				expRowNumberdriver= k +1;
 				isExceptiondriver = false;
 				load_Module_Drive();
