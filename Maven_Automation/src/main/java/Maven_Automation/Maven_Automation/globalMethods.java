@@ -170,7 +170,7 @@ public class globalMethods implements reusableMethods {
             {
 			System.out.println("Not able to close the Browser");
 			driver.close();
-            driver.quit();
+            //driver.quit();
 			e.printStackTrace();
 			System.err.println("Error: " + e.getMessage());
 		    }
