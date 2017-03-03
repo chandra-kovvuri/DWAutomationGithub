@@ -31,6 +31,7 @@ public class DriverClass {
 		//Loading driver.xls to decide the modules which user wants to run
 		try{
 			testdatadriver=System.getProperty("user.dir");
+			System.out.println("The System path is  "+testdatadriver );
 			/*Added \\Maven_Automation to run the scripts from Jenkins. if you are running from local machine remove that folder
 			 * globalMethods.java as well. */
 			testdatadriver=testdatadriver+"\\TestData\\Driver.xlsx";
