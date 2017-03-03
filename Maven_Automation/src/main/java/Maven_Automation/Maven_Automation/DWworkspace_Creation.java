@@ -470,7 +470,8 @@ public class DWworkspace_Creation {
 		 }*/
 		driver.switchTo().frame(1);
 		Wsstatus=Wsstatus.toUpperCase();
-    	if(Wsstatus=="APPROVE"){
+    	if(Wsstatus.equalsIgnoreCase("APPROVE")){
+    		System.out.println("In approve case");
     		driver.findElement(By.id("ctl00_PlaceHolderMain_approveDescription_ctl01_RadioBtnApprovalStatus_0")).click();
     		driver.findElement(By.name("ctl00$PlaceHolderMain$approveComment$ctl01$Comments")).sendKeys(Wscomments);
     		driver.findElement(By.name("ctl00$PlaceHolderMain$ctl00$RptControls$BtnSubmit")).click();

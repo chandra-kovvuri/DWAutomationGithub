@@ -52,7 +52,8 @@ public class globalMethods implements reusableMethods {
 		try{
 			file_Path=System.getProperty("user.dir");
 			if (subModule.isEmpty()) {
-				file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\";
+				//file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\";
+				file_Path=file_Path+"\\Result\\"+mainModule+"\\";
 				file = new File(file_Path);
 				if(file.exists()==false){ 
 					file.mkdir(); 
@@ -60,7 +61,8 @@ public class globalMethods implements reusableMethods {
 				file_Path=file_Path+mainModule+".xlsx";
 				test_Res_Path=file_Path;
 			}else{
-				file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\"+subModule+"\\";
+				//file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\"+subModule+"\\";
+				file_Path=file_Path+"\\Result\\"+mainModule+"\\"+subModule+"\\";
 				file = new File(file_Path); 
 				if(file.exists()==false){ 
 					file.mkdirs(); 
@@ -118,7 +120,8 @@ public class globalMethods implements reusableMethods {
 	}
 	//This method is useful to return the test data path based on the module name
 	public String testDataPath(String module_Name,String subModule_Name) throws Exception{
-		String testdataPath=System.getProperty("user.dir")+"\\Maven_Automation"+"\\TestData\\";
+		//String testdataPath=System.getProperty("user.dir")+"\\Maven_Automation"+"\\TestData\\";
+		String testdataPath=System.getProperty("user.dir")+"\\TestData\\";
 		testdataPath =testdataPath+module_Name+".xlsx";
 		return testdataPath;
 	}
@@ -129,7 +132,7 @@ public class globalMethods implements reusableMethods {
 		//String baseUrl = "file://C:/Selenium_Automation/CreateAccount.htm";
 		//String baseUrl="https://ozone.oakton.com.au";
 		//driver.get(URL);
-		System.setProperty("webdriver.chrome.driver", "C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/chromedriver.exe");
 		WebDriver driver1 = new ChromeDriver();
 		driver1.manage().window().maximize();
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -183,7 +186,8 @@ public class globalMethods implements reusableMethods {
 			String RepositoryFile;
 			RepositoryFile=System.getProperty("user.dir");
 			Properties propertyFile = new Properties();
-            RepositoryFile =RepositoryFile+"\\Maven_Automation"+ "\\TestData\\ObjectRepository.properties";
+            //RepositoryFile =RepositoryFile+"\\Maven_Automation"+ "\\TestData\\ObjectRepository.properties";
+			RepositoryFile =RepositoryFile+"\\TestData\\ObjectRepository.properties";
             stream = new FileInputStream(RepositoryFile);
 			propertyFile.load(stream);
 			String locatorProperty = propertyFile.getProperty(locatorName);
