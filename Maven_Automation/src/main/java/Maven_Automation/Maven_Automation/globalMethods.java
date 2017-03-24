@@ -50,8 +50,8 @@ public class globalMethods implements reusableMethods {
 	//This method is useful to create a excel file and save into the local drive.
 	public String resultFile(String mainModule,String subModule) throws IOException{
 		try{
-			//file_Path=System.getProperty("user.dir");
-			file_Path="F:\\DWAutomationGithub\\Maven_Automation";
+			file_Path=System.getProperty("user.dir");
+			//file_Path="F:\\DWAutomationGithub\\Maven_Automation";
 			if (subModule.isEmpty()) {
 				//file_Path=file_Path+"\\Maven_Automation"+"\\Result\\"+mainModule+"\\";
 				file_Path=file_Path+"\\Result\\"+mainModule+"\\";
@@ -122,8 +122,8 @@ public class globalMethods implements reusableMethods {
 	//This method is useful to return the test data path based on the module name
 	public String testDataPath(String module_Name,String subModule_Name) throws Exception{
 		//String testdataPath=System.getProperty("user.dir")+"\\Maven_Automation"+"\\TestData\\";
-		//String testdataPath=System.getProperty("user.dir")+"\\TestData\\";
-		String testdataPath="F:/DWAutomationGithub/Maven_Automation/TestData/";
+		String testdataPath=System.getProperty("user.dir")+"\\TestData\\";
+		//String testdataPath="F:/DWAutomationGithub/Maven_Automation/TestData/";
 		testdataPath =testdataPath+module_Name+".xlsx";
 		return testdataPath;
 	}
@@ -186,8 +186,8 @@ public class globalMethods implements reusableMethods {
 		try{
 			FileInputStream stream;
 			String RepositoryFile;
-			//RepositoryFile=System.getProperty("user.dir");
-			RepositoryFile="F:\\DWAutomationGithub\\Maven_Automation";
+			RepositoryFile=System.getProperty("user.dir");
+			//RepositoryFile="F:\\DWAutomationGithub\\Maven_Automation";
 			Properties propertyFile = new Properties();
             //RepositoryFile =RepositoryFile+"\\Maven_Automation"+ "\\TestData\\ObjectRepository.properties";
 			RepositoryFile =RepositoryFile+"\\TestData\\ObjectRepository.properties";

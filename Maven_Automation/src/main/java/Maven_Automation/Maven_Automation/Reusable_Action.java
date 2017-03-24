@@ -12,7 +12,6 @@ public class Reusable_Action {
 			Reusable_Action.check_Sub_Module_Execution(globalobj,result_Path,module_Name,subModule_Name,workspaceName);
 	    }else if(module_Name.equalsIgnoreCase("DWWorkspace")){
 	    	Reusable_Action.check_Sub_Module_Execution(globalobj,result_Path,module_Name,subModule_Name,workspaceName);
-						
 		}
 	
 	}
@@ -20,7 +19,9 @@ public class Reusable_Action {
 		//in this class checking that whether main module is having sub module or not
 		//If main module is having any sub module then creating a class and loading the corresponding method to execute
 		//the test cases.
-		if (subModule_Name.equalsIgnoreCase("HomePage")){
+		if (subModule_Name.equalsIgnoreCase("NewsArticle")){
+			NewsArticle_Creation news=new NewsArticle_Creation();
+			news.newsCreation_DWHomePage(globalobj,result_Path,module_Name,subModule_Name);
 			System.out.println("executing the submodule test cases."+subModule_Name);
 		}else if(subModule_Name.equalsIgnoreCase("WorkspaceCreation")){
 			DWworkspace_Creation wc=new DWworkspace_Creation();
