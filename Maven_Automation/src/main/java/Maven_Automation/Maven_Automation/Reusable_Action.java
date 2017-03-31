@@ -21,7 +21,7 @@ public class Reusable_Action {
 		//the test cases.
 		if (subModule_Name.equalsIgnoreCase("NewsArticle")){
 			NewsArticle_Creation news=new NewsArticle_Creation();
-			news.newsCreation_DWHomePage(globalobj,result_Path,module_Name,subModule_Name);
+			news.Newscreation_DWHomePage(globalobj,result_Path,module_Name,subModule_Name);
 			System.out.println("executing the submodule test cases."+subModule_Name);
 		}else if(subModule_Name.equalsIgnoreCase("WorkspaceCreation")){
 			DWworkspace_Creation wc=new DWworkspace_Creation();

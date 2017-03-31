@@ -123,8 +123,10 @@ public class globalMethods implements reusableMethods {
 	public String testDataPath(String module_Name,String subModule_Name) throws Exception{
 		//String testdataPath=System.getProperty("user.dir")+"\\Maven_Automation"+"\\TestData\\";
 		String testdataPath=System.getProperty("user.dir")+"\\TestData\\";
+		System.out.println("The path of test data sheet is  "+testdataPath);
 		//String testdataPath="F:/DWAutomationGithub/Maven_Automation/TestData/";
 		testdataPath =testdataPath+module_Name+".xlsx";
+		System.out.println("The path of test data sheet is  "+testdataPath);
 		return testdataPath;
 	}
 	public WebDriver openBrowser(String URL) throws Exception{
