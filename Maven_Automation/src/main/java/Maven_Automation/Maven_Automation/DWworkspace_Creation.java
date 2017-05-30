@@ -21,6 +21,7 @@ import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class DWworkspace_Creation {
 	//Declaring the local variables to store the runtime data.
@@ -42,6 +43,8 @@ public class DWworkspace_Creation {
 			testdatawb =new  XSSFWorkbook(new FileInputStream(testData));
 			DataFormatter formatter = new DataFormatter();
 			String sheetName="wssheet";
+			//Assert.assertEquals(0, driver.findElements(By.id("locator")).size());
+			//Assert.assertEquals("1,500.00", driver.findElement(By.cssSelector("div.eoh.")).getText());
 			//Extract the data from Excel file and parameterize the data
 			switch (workspaceName){
 			case "PROJECT":

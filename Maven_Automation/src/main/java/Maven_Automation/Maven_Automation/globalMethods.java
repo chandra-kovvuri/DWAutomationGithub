@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
@@ -132,12 +133,9 @@ public class globalMethods implements reusableMethods {
 	public WebDriver openBrowser(String URL) throws Exception{
 		
 		//driver = new InternetExplorerDriver();
-		//WebDriver driver = new FirefoxDriver();
-		//String baseUrl = "file://C:/Selenium_Automation/CreateAccount.htm";
-		//String baseUrl="https://ozone.oakton.com.au";
-		//driver.get(URL);
-		System.setProperty("webdriver.chrome.driver", "C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/chromedriver.exe");
-		WebDriver driver1 = new ChromeDriver();
+		WebDriver driver1 = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:/Users/admin/.jenkins/workspace/DwAutomation/Maven_Automation/chromedriver.exe");
+		//WebDriver driver1 = new ChromeDriver();
 		driver1.manage().window().maximize();
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//Runtime.getRuntime().exec("C:\\Automation\\Selenium_Automation\\Handling_Window.exe");
